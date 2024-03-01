@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-xs-10">
+    <app-shopping-edit></app-shopping-edit>
+    <hr />
+    <ul class="list-group">
+      @for (item of ingredients; track $index) {
+      <li>
+        <a class="list-group-item" style="cursor: pointer"
+          >{{ item.name }} ({{ item.amount }})
+        </a>
+      </li>
+      }
+    </ul>
+  </div>
+</div>
